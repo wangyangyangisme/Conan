@@ -1,0 +1,9 @@
+next version:
+-extend log options: output to console or file
+-qt creator project files
+
+future versions:
+-Add a toolbutton to display statistics:
+    -number of objects, signals, slots, connections
+    -average number of signals, slots, connections
+-Add a context menu to the object hierarchy to remove objects

@@ -1,0 +1,12 @@
+-Add a toolbutton to display statistics:
+    -number of objects, signals, slots, connections
+    -average number of signals, slots, connections
+-Add a toolbutton to find and highlight duplicate signals
+-Dynamic signal spy:
+    -Add 'Spy' to the connection context menu
+    -Add a new view that lists all connections that are currently being spied
+    -Whenever a spied signal is emitted output the relevant data:
+        -signal signature
+        -signal data, if convertable to string
+        -sender/receiver object class/name/address
+-Create pro files so it can be easily build on other platforms

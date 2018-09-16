@@ -1,0 +1,8 @@
+future versions:
+-extend log options: output to console or file
+-Add a toolbutton to display statistics:
+    -number of objects, signals, slots, connections
+    -average number of signals, slots, connections
+    -display in statusbar?
+-keep qt-apps.org / sf.net / mac.softpedia.com / qt centre in sync
+-add source code to conan demo app release package

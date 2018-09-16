@@ -1,0 +1,104 @@
+<ui version="4.0" >
+ <class>AboutDialog</class>
+ <widget class="QDialog" name="AboutDialog" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>412</width>
+    <height>322</height>
+   </rect>
+  </property>
+  <property name="windowTitle" >
+   <string>About Conan</string>
+  </property>
+  <property name="windowIcon" >
+   <iconset resource="Conan.qrc" >
+    <normaloff>:/icons/conan/connect</normaloff>:/icons/conan/connect</iconset>
+  </property>
+  <property name="layoutDirection" >
+   <enum>Qt::LeftToRight</enum>
+  </property>
+  <property name="modal" >
+   <bool>true</bool>
+  </property>
+  <layout class="QGridLayout" name="gridLayout" >
+   <item row="0" column="0" colspan="3" >
+    <widget class="QLabel" name="textLabel" >
+     <property name="text" >
+      <string>&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/REC-html40/strict.dtd">
+&lt;html>&lt;head>&lt;meta name="qrichtext" content="1" />&lt;style type="text/css">
+p, li { white-space: pre-wrap; }
+&lt;/style>&lt;/head>&lt;body style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;">
+&lt;p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt;">&lt;span style=" font-size:12pt; font-weight:600;">Conan - Connection Analyzer for Qt&lt;/span>&lt;/p>
+&lt;p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt;">run-time introspection of object hierarchies,&lt;/p>
+&lt;p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt;">signal/slot connections, and signal emissions&lt;/p>
+&lt;p align="center" style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt;">&lt;/p>
+&lt;p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt;">Version - %1; Qt %2&lt;/p>
+&lt;p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt;">Contact - &lt;a href="edekoning@gmail.com">&lt;span style=" text-decoration: underline; color:#0000ff;">edekoning@gmail.com&lt;/span>&lt;/a>&lt;/p>
+&lt;p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt; text-decoration: underline; color:#0000ff;">&lt;a href="edekoning@gmail.com">&lt;span style=" text-decoration:none; color:#000000;">Website - &lt;/span>&lt;/a>&lt;a href="http://sourceforge.net/projects/conanforqt">http://sourceforge.net/projects/conanforqt&lt;/a>&lt;/p>
+&lt;p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt; text-decoration: underline; color:#0000ff;">&lt;a href="http://sourceforge.net/projects/conanforqt">&lt;span style=" text-decoration:none; color:#000000;">License - GPL (source code); CCL (icons)&lt;/span>&lt;/a>&lt;/p>
+&lt;p align="center" style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt; color:#000000;">&lt;/p>
+&lt;p align="center" style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt; color:#000000;">&lt;/p>
+&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt; color:#000000;">&lt;span style=" font-weight:600;">Conan was made using the following tools:&lt;/span>&lt;/p>
+&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt;">Silk icons made by Mark James available at &lt;a href="http://www.famfamfam.com/lab/icons/silk/">&lt;span style=" text-decoration: underline; color:#0000ff;">FamFamFam&lt;/span>&lt;/a>&lt;/p>
+&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt; text-decoration: underline; color:#0000ff;">&lt;a href="http://www.famfamfam.com/lab/icons/silk/">&lt;span style=" text-decoration:none; color:#000000;">Qt Open Source Edition, available from &lt;/span>&lt;/a>&lt;a href="http://trolltech.com/downloads/opensource/">Trolltech&lt;/a>&lt;/p>
+&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt; text-decoration: underline; color:#0000ff;">&lt;a href="http://trolltech.com/downloads/opensource/">&lt;span style=" text-decoration:none; color:#000000;">Visual C++ 2008 Express Edition, available from &lt;/span>&lt;/a>&lt;a href="http://www.microsoft.com/express/vc/">Microsoft&lt;/a>&lt;/p>
+&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt; text-decoration: underline; color:#0000ff;">&lt;a href="www.doxygen.org/">Doxygen&lt;/a>&lt;a href="http://www.microsoft.com/express/vc/">&lt;span style=" text-decoration:none; color:#000000;"> by Dimitri van Heesch for source code documentation&lt;/span>&lt;/a>&lt;/p>
+&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt; text-decoration: underline; color:#0000ff;">&lt;a href="http://sourceforge.net/">SourceForge&lt;/a>&lt;a href="http://www.microsoft.com/express/vc/">&lt;span style=" text-decoration:none; color:#000000;">, which hosts this project.&lt;/span>&lt;/a>&lt;/p>
+&lt;p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt; color:#000000;">&lt;/p>
+&lt;p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt; color:#000000;">&lt;/p>
+&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt; color:#000000;">© Copyright 2008 - 2009 Elmar de Koning, All Rights Reserved&lt;/p>&lt;/body>&lt;/html></string>
+     </property>
+     <property name="openExternalLinks" >
+      <bool>true</bool>
+     </property>
+     <property name="textInteractionFlags" >
+      <set>Qt::LinksAccessibleByKeyboard|Qt::LinksAccessibleByMouse</set>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="0" >
+    <spacer name="horizontalSpacer" >
+     <property name="orientation" >
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="sizeHint" stdset="0" >
+      <size>
+       <width>302</width>
+       <height>20</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item row="1" column="1" >
+    <widget class="QPushButton" name="okButton" >
+     <property name="text" >
+      <string>Ok</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="Conan.qrc" />
+ </resources>
+ <connections>
+  <connection>
+   <sender>okButton</sender>
+   <signal>clicked()</signal>
+   <receiver>AboutDialog</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>356</x>
+     <y>266</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>281</x>
+     <y>278</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

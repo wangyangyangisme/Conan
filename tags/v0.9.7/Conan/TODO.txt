@@ -1,0 +1,8 @@
+future versions:
+-extend log options: output to console or file
+-Add a toolbutton to display statistics:
+    -number of objects, signals, slots, connections
+    -average number of signals, slots, connections
+    -display in statusbar?
+-Add a context menu to the object hierarchy to remove objects
+-keep qt-apps.org / sf.net / mac.softpedia.com in sync

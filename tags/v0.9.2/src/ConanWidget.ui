@@ -1,0 +1,436 @@
+<ui version="4.0" >
+ <class>ConanWidget</class>
+ <widget class="QWidget" name="ConanWidget" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>814</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle" >
+   <string>Conan - Connection Analyzer for Qt</string>
+  </property>
+  <property name="windowIcon" >
+   <iconset resource="ConAn.qrc" >
+    <normaloff>:/icons/conan/connect</normaloff>:/icons/conan/connect</iconset>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout_2" >
+   <item>
+    <widget class="QSplitter" name="mainSplitter" >
+     <property name="orientation" >
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <widget class="QWidget" name="layoutWidget" >
+      <layout class="QVBoxLayout" name="leftVerticalLayout" >
+       <item>
+        <layout class="QHBoxLayout" name="leftToolBarLayout" >
+         <item>
+          <widget class="QToolButton" name="backToolButton" >
+           <property name="text" >
+            <string>Back</string>
+           </property>
+           <property name="icon" >
+            <iconset resource="ConAn.qrc" >
+             <normaloff>:/icons/conan/prev</normaloff>:/icons/conan/prev</iconset>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QToolButton" name="forwardToolButton" >
+           <property name="text" >
+            <string>Forward</string>
+           </property>
+           <property name="icon" >
+            <iconset resource="ConAn.qrc" >
+             <normaloff>:/icons/conan/next</normaloff>:/icons/conan/next</iconset>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="findLineEdit" >
+           <property name="toolTip" >
+            <string>Find object (Ctrl+F)</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QToolButton" name="findToolButton" >
+           <property name="text" >
+            <string>Find</string>
+           </property>
+           <property name="icon" >
+            <iconset resource="ConAn.qrc" >
+             <normaloff>:/icons/conan/find</normaloff>:/icons/conan/find</iconset>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QToolButton" name="refreshToolButton" >
+           <property name="text" >
+            <string>Refresh</string>
+           </property>
+           <property name="icon" >
+            <iconset resource="ConAn.qrc" >
+             <normaloff>:/icons/conan/refresh</normaloff>:/icons/conan/refresh</iconset>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QToolButton" name="discoverToolButton" >
+           <property name="text" >
+            <string>Discover widgets</string>
+           </property>
+           <property name="icon" >
+            <iconset resource="ConAn.qrc" >
+             <normaloff>:/icons/conan/transmit</normaloff>:/icons/conan/transmit</iconset>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QToolButton" name="bugToolButton" >
+           <property name="text" >
+            <string>Find duplicate connections</string>
+           </property>
+           <property name="icon" >
+            <iconset resource="ConAn.qrc" >
+             <normaloff>:/icons/conan/bug</normaloff>:/icons/conan/bug</iconset>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="horizontalSpacer_2" >
+           <property name="orientation" >
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0" >
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <widget class="QToolButton" name="aboutToolButton" >
+           <property name="toolTip" >
+            <string>About CONAN</string>
+           </property>
+           <property name="text" >
+            <string>...</string>
+           </property>
+           <property name="icon" >
+            <iconset resource="ConAn.qrc" >
+             <normaloff>:/icons/conan/connect</normaloff>:/icons/conan/connect</iconset>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <widget class="QTreeView" name="objectTree" >
+         <property name="sizePolicy" >
+          <sizepolicy vsizetype="Expanding" hsizetype="Expanding" >
+           <horstretch>0</horstretch>
+           <verstretch>1</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="showDropIndicator" stdset="0" >
+          <bool>false</bool>
+         </property>
+         <property name="uniformRowHeights" >
+          <bool>true</bool>
+         </property>
+         <property name="allColumnsShowFocus" >
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="inheritanceGroupBox" >
+         <property name="sizePolicy" >
+          <sizepolicy vsizetype="Minimum" hsizetype="Minimum" >
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="title" >
+          <string>Inheritance</string>
+         </property>
+         <layout class="QGridLayout" name="gridLayout" >
+          <item row="0" column="0" >
+           <widget class="QListView" name="inheritanceList" >
+            <property name="sizePolicy" >
+             <sizepolicy vsizetype="Minimum" hsizetype="Minimum" >
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize" >
+             <size>
+              <width>0</width>
+              <height>128</height>
+             </size>
+            </property>
+            <property name="maximumSize" >
+             <size>
+              <width>16777215</width>
+              <height>128</height>
+             </size>
+            </property>
+            <property name="baseSize" >
+             <size>
+              <width>0</width>
+              <height>128</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="layoutWidget" >
+      <layout class="QVBoxLayout" name="rightVerticalLayout" >
+       <item>
+        <layout class="QHBoxLayout" name="rightToolbarLayout" >
+         <item>
+          <spacer name="horizontalSpacer" >
+           <property name="orientation" >
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0" >
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="hideInactiveCheckBox" >
+           <property name="text" >
+            <string>Hide Inactive Methods</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="hideInheritedCheckBox" >
+           <property name="text" >
+            <string>Hide Inherited Methods</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <widget class="QSplitter" name="signalSlotSplitter" >
+         <property name="orientation" >
+          <enum>Qt::Vertical</enum>
+         </property>
+         <widget class="QGroupBox" name="signalGroupBox" >
+          <property name="title" >
+           <string>Signals</string>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_1" >
+           <item row="0" column="0" colspan="2" >
+            <widget class="QTreeView" name="signalTree" >
+             <property name="sizePolicy" >
+              <sizepolicy vsizetype="Expanding" hsizetype="Expanding" >
+               <horstretch>1</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="contextMenuPolicy" >
+              <enum>Qt::CustomContextMenu</enum>
+             </property>
+             <property name="showDropIndicator" stdset="0" >
+              <bool>false</bool>
+             </property>
+             <property name="uniformRowHeights" >
+              <bool>false</bool>
+             </property>
+             <property name="allColumnsShowFocus" >
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QGroupBox" name="slotGroupBox" >
+          <property name="title" >
+           <string>Slots</string>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_2" >
+           <item row="0" column="0" colspan="2" >
+            <widget class="QTreeView" name="slotTree" >
+             <property name="sizePolicy" >
+              <sizepolicy vsizetype="Expanding" hsizetype="Expanding" >
+               <horstretch>1</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="contextMenuPolicy" >
+              <enum>Qt::CustomContextMenu</enum>
+             </property>
+             <property name="showDropIndicator" stdset="0" >
+              <bool>false</bool>
+             </property>
+             <property name="uniformRowHeights" >
+              <bool>false</bool>
+             </property>
+             <property name="allColumnsShowFocus" >
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+  <action name="actionBack" >
+   <property name="icon" >
+    <iconset resource="ConAn.qrc" >
+     <normaloff>:/icons/conan/prev</normaloff>:/icons/conan/prev</iconset>
+   </property>
+   <property name="text" >
+    <string>Back</string>
+   </property>
+   <property name="toolTip" >
+    <string>Back (Alt+Left)</string>
+   </property>
+   <property name="shortcut" >
+    <string>Alt+Left</string>
+   </property>
+  </action>
+  <action name="actionForward" >
+   <property name="icon" >
+    <iconset resource="ConAn.qrc" >
+     <normaloff>:/icons/conan/next</normaloff>:/icons/conan/next</iconset>
+   </property>
+   <property name="text" >
+    <string>Forward</string>
+   </property>
+   <property name="toolTip" >
+    <string>Forward (Alt+Right)</string>
+   </property>
+   <property name="shortcut" >
+    <string>Alt+Right</string>
+   </property>
+  </action>
+  <action name="actionFind" >
+   <property name="icon" >
+    <iconset resource="ConAn.qrc" >
+     <normaloff>:/icons/conan/find</normaloff>:/icons/conan/find</iconset>
+   </property>
+   <property name="text" >
+    <string>Find next</string>
+   </property>
+   <property name="toolTip" >
+    <string>Find next (F3)</string>
+   </property>
+   <property name="shortcut" >
+    <string>F3</string>
+   </property>
+  </action>
+  <action name="actionRefresh" >
+   <property name="icon" >
+    <iconset resource="ConAn.qrc" >
+     <normaloff>:/icons/conan/refresh</normaloff>:/icons/conan/refresh</iconset>
+   </property>
+   <property name="text" >
+    <string>Refresh</string>
+   </property>
+   <property name="toolTip" >
+    <string>Refresh (F5)</string>
+   </property>
+   <property name="shortcut" >
+    <string>F5</string>
+   </property>
+  </action>
+  <action name="actionFocusFind" >
+   <property name="text" >
+    <string>FocusFind</string>
+   </property>
+   <property name="toolTip" >
+    <string>Focus find edit (Ctrl+F)</string>
+   </property>
+   <property name="shortcut" >
+    <string>Ctrl+F</string>
+   </property>
+  </action>
+  <action name="actionDiscover" >
+   <property name="icon" >
+    <iconset resource="ConAn.qrc" >
+     <normaloff>:/icons/conan/transmit</normaloff>:/icons/conan/transmit</iconset>
+   </property>
+   <property name="text" >
+    <string>Discover objects</string>
+   </property>
+  </action>
+  <action name="actionFindMethod" >
+   <property name="icon" >
+    <iconset resource="ConAn.qrc" >
+     <normaloff>:/icons/conan/find</normaloff>:/icons/conan/find</iconset>
+   </property>
+   <property name="text" >
+    <string>Find object</string>
+   </property>
+   <property name="iconText" >
+    <string>Find OB</string>
+   </property>
+   <property name="toolTip" >
+    <string>Find method</string>
+   </property>
+  </action>
+  <action name="actionSpySignal" >
+   <property name="text" >
+    <string>Spy signal</string>
+   </property>
+  </action>
+  <action name="actionAboutConan" >
+   <property name="icon" >
+    <iconset resource="ConAn.qrc" >
+     <normaloff>:/icons/conan/connect</normaloff>:/icons/conan/connect</iconset>
+   </property>
+   <property name="text" >
+    <string>About Conan</string>
+   </property>
+  </action>
+  <action name="actionBug" >
+   <property name="icon" >
+    <iconset resource="ConAn.qrc" >
+     <normaloff>:/icons/conan/bug</normaloff>:/icons/conan/bug</iconset>
+   </property>
+   <property name="text" >
+    <string>Find duplicate connections</string>
+   </property>
+  </action>
+ </widget>
+ <tabstops>
+  <tabstop>backToolButton</tabstop>
+  <tabstop>forwardToolButton</tabstop>
+  <tabstop>findLineEdit</tabstop>
+  <tabstop>findToolButton</tabstop>
+  <tabstop>refreshToolButton</tabstop>
+  <tabstop>discoverToolButton</tabstop>
+  <tabstop>aboutToolButton</tabstop>
+  <tabstop>objectTree</tabstop>
+  <tabstop>inheritanceList</tabstop>
+  <tabstop>hideInactiveCheckBox</tabstop>
+  <tabstop>hideInheritedCheckBox</tabstop>
+  <tabstop>signalTree</tabstop>
+  <tabstop>slotTree</tabstop>
+ </tabstops>
+ <resources>
+  <include location="ConAn.qrc" />
+ </resources>
+ <connections/>
+</ui>

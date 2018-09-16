@@ -1,0 +1,28 @@
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual C++ Express 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Conan", "Conan\win32\Conan.vcproj", "{1BBBFFCE-C114-42C0-BDE1-C96E7FE646E6}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ConanApp", "ConanApp\win32\ConanApp.vcproj", "{6B191F3F-9557-42A5-97F1-15E1997E96A5}"
+	ProjectSection(ProjectDependencies) = postProject
+		{1BBBFFCE-C114-42C0-BDE1-C96E7FE646E6} = {1BBBFFCE-C114-42C0-BDE1-C96E7FE646E6}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1BBBFFCE-C114-42C0-BDE1-C96E7FE646E6}.Debug|Win32.ActiveCfg = Debug|Win32
+		{1BBBFFCE-C114-42C0-BDE1-C96E7FE646E6}.Debug|Win32.Build.0 = Debug|Win32
+		{1BBBFFCE-C114-42C0-BDE1-C96E7FE646E6}.Release|Win32.ActiveCfg = Release|Win32
+		{1BBBFFCE-C114-42C0-BDE1-C96E7FE646E6}.Release|Win32.Build.0 = Release|Win32
+		{6B191F3F-9557-42A5-97F1-15E1997E96A5}.Debug|Win32.ActiveCfg = Debug|Win32
+		{6B191F3F-9557-42A5-97F1-15E1997E96A5}.Debug|Win32.Build.0 = Debug|Win32
+		{6B191F3F-9557-42A5-97F1-15E1997E96A5}.Release|Win32.ActiveCfg = Release|Win32
+		{6B191F3F-9557-42A5-97F1-15E1997E96A5}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
